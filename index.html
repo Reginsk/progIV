@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIV - Régis H</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>
+          Olá, <span id="nome-usuario">Seu Nome</span> eu sou o
+          <span id="nome-usuario" class="highlight">Régis H</span>
+        </h1>
+        <p class="hero-subtitle">
+          Desenvolvedor Full Stack & Entusiasta de Tecnologia
+        </p>
+        <nav>
+          <ul class="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article id="sobre" class="section">
+        <div class="container">
+          <h2 class="section-title">Sobre mim</h2>
+          <div class="sobre-content">
+            <div class="foto-container">
+              <img
+                src="media/profile_pic.jpeg"
+                alt="Foto de perfil de Régis H"
+                class="profile-photo"
+              />
+            </div>
+            <div class="sobre-texto">
+              <p>
+                Sou um desenvolvedor apaixonado por tecnologia e aprendizado
+                constante. Especializado em desenvolvimento web moderno, sempre
+                buscando as melhores práticas e tecnologias emergentes.
+              </p>
+              <div class="stats">
+                <div class="stat-item">
+                  <span class="stat-number">3+</span>
+                  <span class="stat-label">Anos de Experiência</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Projetos Concluídos</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Comprometimento</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="habilidades" class="section">
+        <div class="container">
+          <h2 class="section-title">Minhas habilidades</h2>
+          <div class="skills-container">
+            <div class="skills-list">
+              <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                  <li>HTML, CSS e JavaScript</li>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Backend</h3>
+                <ul>
+                  <li>Node.js e Express</li>
+                  <li>Banco de dados SQL/NoSQL (MySQL, PostgreSQL, MongoDB)</li>
+                  <li>APIs RESTful</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                  <li>Trabalho em equipe</li>
+                  <li>Comunicação efetiva</li>
+                  <li>Resolução de problemas</li>
+                  <li>Gestão de projetos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-chart">
+              <h3>Nível de Proficiência</h3>
+              <canvas id="grafico" width="400" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="portfolio" class="section">
+        <div class="container">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="portfolio-content">
+            <div class="video-container">
+              <h3>Apresentação em Vídeo</h3>
+              <div class="youtube-embed">
+                <iframe
+                  width="1509"
+                  height="849"
+                  src="https://www.youtube.com/embed/eWaWhclF1hA"
+                  title="Bubblegum K.K. (ACNH)"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="contato" class="section">
+        <div class="container">
+          <h2 class="section-title">Entre em contato</h2>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3>Informações de Contato</h3>
+              <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <a href="mailto:regis.santos@unoesc.edu.br"
+                  >regis.santos@unoesc.edu.br</a
+                >
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span>+55 (12) 99670-0092</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">🌐</span>
+                <a href="https://github.com/reginsk" target="_blank">GitHub</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <a
+                  href="https://www.linkedin.com/in/regisfelix/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Enviar Mensagem</span>
+                <div class="btn-icon">📤</div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 - Desenvolvido por
+          <a href="https://github.com/reginsk" target="_blank">Régis H</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
